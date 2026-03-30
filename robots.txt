@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://realcontrato.vercel.app/sitemap.xml

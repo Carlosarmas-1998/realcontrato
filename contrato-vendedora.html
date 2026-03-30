@@ -4,6 +4,22 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ENIGME · Contrato de Asesora Independiente</title>
+  <meta name="description" content="Contrato de Distribución Independiente para Asesoras de ENIGME Honduras. Firma digital con validez legal."/>
+  <meta name="keywords" content="ENIGME, Honduras, contrato, asesora, venta directa, multinivel, firma digital"/>
+  <meta name="author" content="ENIGME Honduras"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:title" content="ENIGME Honduras · Contrato de Asesora Independiente"/>
+  <meta property="og:description" content="Registro y firma digital de contratos para Asesoras Independientes de ENIGME Honduras."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.enigmeofficial.com"/>
+  <meta name="theme-color" content="#060606"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="apple-mobile-web-app-title" content="ENIGME Contratos"/>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="icon" href="icon-192.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="icon-192.svg"/>
+  <link rel="canonical" href="https://www.enigmeofficial.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet"/>
   <style>
     :root{--black:#060606;--white:#fff;--gold:#CBAA63;--gold-dim:#8b7040;--gold-bg:rgba(203,170,99,0.07);--text:#e8e4dc;--muted:rgba(232,228,220,0.35);--border:rgba(232,228,220,0.08);--surface:rgba(255,255,255,0.03);--green:#27ae60;--red:#e74c3c;--blue:#3498db}
@@ -551,6 +567,7 @@ function nuevoContrato(){
 document.querySelectorAll('.form-input,.form-select').forEach(el=>{el.addEventListener('input',()=>el.classList.remove('error'));el.addEventListener('change',()=>el.classList.remove('error'));});
 const dz=$('dropZone');if(dz){dz.ondragover=e=>{e.preventDefault();dz.style.borderColor='var(--gold)';};dz.ondragleave=()=>{dz.style.borderColor='rgba(203,170,99,.3)';};dz.ondrop=e=>{e.preventDefault();dz.style.borderColor='rgba(203,170,99,.3)';$('f_files').files=e.dataTransfer.files;onFiles();};}
 init();
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(e=>console.log('SW:',e));}
 </script>
 </body>
 </html>
